@@ -1,0 +1,14 @@
+elastic_search:
+    host: 192.168.1.201
+    port: 9200
+    log_level: DEBUG
+    index: wiki_analysis
+    scheme: http
+databases:
+    word_lookup: words.db
+    redis:
+        host: 192.168.1.201
+        port: 6379
+processing_servers:
+    - [192.168.1.201, 8900]
+    - [192.168.1.202, 8900]
